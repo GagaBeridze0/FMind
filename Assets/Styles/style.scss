@@ -1,0 +1,32 @@
+@import './Components/root';
+@import './Components/modal';
+@import './Components/button';
+@import './Components/header';
+@import './Components/offcanvas';
+
+body{
+    background-color: $bg-component-dark-light;
+}
+
+html::-webkit-scrollbar{
+    width: .4rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: $bg-component-dark;
+    border-radius: 20px;
+}
+
+html::-webkit-scrollbar-button{
+    display: none;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: $bg-component-dark-light;
+}
+
+ol, ul, dl{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
