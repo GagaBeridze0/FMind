@@ -1,0 +1,14 @@
+@import './Components/root';
+@import './Components/button';
+@import './Components/header';
+@import './Components/fonts';
+@import './Components/offcanvas';
+@import './Components/dropdown';
+@import './Components/modal';
+@import './Components/list-group';
+
+.bg-body-tertiary,
+body{
+    background-color: $body-color !important;
+    font-family: 'Comfortaa', sans-serif !important;
+}

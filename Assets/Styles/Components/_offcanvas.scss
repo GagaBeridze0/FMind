@@ -1,0 +1,44 @@
+.offcanvas {
+  background-color: $body-color;
+  width: 40% !important;
+}
+
+.offcanvas-header{
+  font-family: "mtavruli", sans-serif;
+    & h5{
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+      color: $primary-text;
+    }
+}
+
+.offcanvas-start {
+  border-radius: 0 15px 15px 0;
+}
+
+.offcanvas-end {
+  border-radius: 15px 0 0 15px;
+}
+
+.menu-offcanvas {
+  width: 400px !important;
+
+  .offcanvas-body{
+    padding: 10px;
+  }
+}
+
+.offcanvas-body{
+    padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .offcanvas {
+    width: 80% !important;
+  }
+
+  .menu-offcanvas {
+    width: 80% !important;
+  }
+}

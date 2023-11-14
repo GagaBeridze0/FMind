@@ -1,0 +1,62 @@
+i:before {
+  line-height: 1.6 !important;
+}
+
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+  border: unset !important;
+}
+
+button {
+  position: relative;
+  overflow: hidden;
+  border: unset !important;
+  outline: unset !important;
+
+  &:active,
+  &:focus{
+    box-shadow: none !important;
+  }
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 400ms linear;
+  background-color: $ripple-color;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.btn{
+  font-family: "nusxuri", sans-serif;
+}
+
+.btn-primary{
+  background-color: $main-color;
+}
+
+.btn-close{
+  background-image: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-text;
+  opacity: 1;
+  transition: .3s;
+
+  &:hover,
+  &:active{
+    color: $primary-text !important;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,21 @@
+.modal {
+  .modal-dialog {
+    border-radius: 20px;
+
+    .modal-content {
+      background-color: $body-color;
+      border-radius: 20px;
+      border: 1px solid $component-color;
+
+      .modal-header,
+      .modal-footer {
+        border: none;
+      }
+
+      button {
+        font-size: 13px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

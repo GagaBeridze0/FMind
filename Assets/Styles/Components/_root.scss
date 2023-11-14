@@ -1,0 +1,47 @@
+:root{
+    --bg-color-1: #373a3e;
+    --bg-color-2: #515b63;
+    --response-background-color: #373a3e;
+    --txt-color-2: #c2c2c2;
+    --txt-color-1: #ffffff;
+    --main-color: #00c896;
+    --main-color-hover: #00dda5;
+    --main-color-active: #00af9c;
+    --send-btn-color: linear-gradient(to right top, #00c896, #00cc99, #00d19c, #00d5a0, #00daa3);
+    --shadow-effect: linear-gradient(180deg, #1c1c1c00, #515b63, #515b63);
+    --border-color: #2424249a;
+    --base-font: "BPG Ingiri", sans-serif;
+    --title-font: "ALK Sanet", sans-serif;
+    --opacity-1: 1;
+    --opacity-05: 0.3;
+    --tran-3: 0.15s;
+    --tran-4: 0.16s;
+    --tran-5: 0.17s;
+    --tran-6: 0.19s;
+    --font-very-small: 11px;
+    --font-small: 13px;
+    --font-medium: 14px;
+    --font-big: 16px;
+    --font-bigest: 18px;
+    --font-title-small: 18px;
+    --font-title-medium: 21px;
+    --font-title-large: 26px;
+}
+
+
+// ============== Dark Mode ============== //
+// Background colors
+$body-color: #515b63;
+$component-color: #373a3e;
+$component-light: #4A5259;
+$hover-color: #373a3e65;
+// Ripple effect
+$ripple-color: #ffffff36;
+// Text colors
+$secondary-text:  #c2c2c2;
+$primary-text: #ffffff;
+// Border color
+$border-bold: #2424249a;
+$border-light: #24242436;
+// Main Color
+$main-color: #00c896;
