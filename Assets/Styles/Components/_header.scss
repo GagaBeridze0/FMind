@@ -5,7 +5,7 @@
   .logo_and_menu {
     display: flex;
     align-items: center;
-  
+
     & span {
       font-weight: bold;
       color: $primary-text;
@@ -38,7 +38,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'nusxuri', sans-serif;
+      font-family: "nusxuri", sans-serif;
       font-size: 15px;
 
       & i {
@@ -69,7 +69,7 @@
         border-radius: 50%;
         color: $primary-text;
 
-        &:first-child{
+        &:first-child {
           display: none;
         }
 
@@ -91,12 +91,45 @@
       & form {
         display: none;
       }
-  
+
       .navbar-btns {
         .btn {
           &:first-child {
             display: inline;
           }
+        }
+      }
+    }
+
+    .mobile-search {
+      .mobile-search-form {
+        background-color: $component-light;
+        padding: 7px 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: $primary-text;
+
+        input {
+          background-color: $component-light;
+          border: none;
+          outline: none;
+          padding: 0 10px;
+          width: 100%;
+          color: $primary-text;
+          font-family: "nusxuri", sans-serif;
+
+          ::placeholder {
+            color: $primary-text;
+          }
+        }
+      }
+
+      .list-group{
+        .list-group-item{
+          background-color: $component-light;
+          font-family: "nusxuri", sans-serif !important;
         }
       }
     }

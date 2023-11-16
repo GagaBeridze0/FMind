@@ -6,6 +6,11 @@
 @import './Components/dropdown';
 @import './Components/modal';
 @import './Components/list-group';
+@import './Components/freshBot';
+
+html{
+  height: 100vh;
+}
 
 .bg-body-tertiary,
 body{

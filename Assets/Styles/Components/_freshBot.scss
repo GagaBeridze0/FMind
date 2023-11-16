@@ -1,0 +1,123 @@
+.freshBot {
+  margin-top: 3rem;
+  background-color: $body-color;
+  padding: 20px;
+  border-radius: 20px;
+
+  & .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: $body-color;
+    border: none;
+
+    h2 {
+      font-weight: 900;
+      font-family: "IBM Plex Sans", sans-serif;
+      color: $primary-text;
+    }
+
+    p {
+      font-family: "mtavruli", sans-serif;
+      color: $secondary-text;
+      font-weight: 500;
+    }
+  }
+
+  .shadow-container {
+    background: linear-gradient(180deg, #191919, #272727a2);
+    height: 10rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    align-content: center;
+    color: #ffffff;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    p {
+      font-size: 11px;
+      margin: 0;
+      padding: 5px 0;
+    }
+  }
+
+  & .freshBot-form {
+    border: 1px solid $border-bold;
+    background-color: $component-light;
+    padding: 10px 10px;
+    border-radius: 17px;
+    font-family: "nusxuri", sans-serif;
+    font-size: 14px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & input {
+      border: none;
+      background-color: $component-light;
+      width: 100%;
+      color: $primary-text;
+
+      &::placeholder {
+        color: $secondary-text;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    & .freshBot-submit {
+      background-color: $primary-text;
+      border-radius: 8px;
+      width: 33px;
+      height: 33px;
+      margin: 0 0.2rem;
+      color: #000000;
+    }
+  }
+
+  #information-container{
+    .query-title {
+        font-family: "mtavruli", sans-serif;
+        color: $primary-text;
+        margin-top: 10px;
+      }
+    
+      .query-info {
+        font-family: "nusxuri", sans-serif;
+        color: $secondary-text;
+      }
+    
+      h5{
+        font-family: "nusxuri", sans-serif;
+        color: $primary-text;
+        font-size: 13px;
+      }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .freshBot {
+    width: 95%;
+
+    .shadow-container{
+        p{
+            display: none;
+        }
+    }
+
+    & .freshBot-form {
+      width: 95%;
+      margin-bottom: 10px;
+    }
+  }
+}

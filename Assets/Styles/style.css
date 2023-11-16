@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=IBM+Plex+Sans:wght@600;700&display=swap");
 :root {
   --bg-color-1: #373a3e;
   --bg-color-2: #515b63;
@@ -88,7 +88,7 @@ span.ripple {
 }
 
 .header {
-  background-color: #515b63;
+  background-color: #191919;
   border-bottom: 1px solid rgba(36, 36, 36, 0.2117647059);
 }
 .header .logo_and_menu {
@@ -100,7 +100,7 @@ span.ripple {
   color: #ffffff;
 }
 .header .navbar {
-  background-color: #515b63;
+  background-color: #191919;
 }
 .header .navbar .nav-btn {
   color: #ffffff;
@@ -108,15 +108,15 @@ span.ripple {
   margin-right: 20px;
 }
 .header .navbar .nav-btn:hover {
-  background-color: rgba(55, 58, 62, 0.3960784314);
+  background-color: #2A2929;
   color: #ffffff;
 }
 .header .navbar .nav-btn:active {
-  background-color: rgba(55, 58, 62, 0.3960784314) !important;
+  background-color: #2A2929 !important;
   color: #ffffff !important;
 }
 .header .navbar form {
-  background-color: #4A5259;
+  background-color: #272727;
   padding: 9px 15px;
   border-radius: 30px;
   display: flex;
@@ -130,7 +130,7 @@ span.ripple {
   font-size: 18px;
 }
 .header .navbar form input {
-  background-color: #4A5259;
+  background-color: #272727;
   border: none;
   padding: 0 10px;
   width: 280px;
@@ -154,11 +154,11 @@ span.ripple {
   display: none;
 }
 .header .navbar .navbar-btns .btn:hover {
-  background-color: rgba(55, 58, 62, 0.3960784314);
+  background-color: #2A2929;
   color: #ffffff;
 }
 .header .navbar .navbar-btns .btn:active {
-  background-color: rgba(55, 58, 62, 0.3960784314) !important;
+  background-color: #2A2929 !important;
   color: #ffffff !important;
 }
 @media screen and (max-width: 768px) {
@@ -167,6 +167,34 @@ span.ripple {
   }
   .header .navbar .navbar-btns .btn:first-child {
     display: inline;
+  }
+  .header .mobile-search .mobile-search-form {
+    background-color: #272727;
+    padding: 7px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #ffffff;
+  }
+  .header .mobile-search .mobile-search-form input {
+    background-color: #272727;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    width: 100%;
+    color: #ffffff;
+    font-family: "nusxuri", sans-serif;
+  }
+  .header .mobile-search .mobile-search-form input ::-moz-placeholder {
+    color: #ffffff;
+  }
+  .header .mobile-search .mobile-search-form input ::placeholder {
+    color: #ffffff;
+  }
+  .header .mobile-search .list-group .list-group-item {
+    background-color: #272727;
+    font-family: "nusxuri", sans-serif !important;
   }
 }
 
@@ -179,8 +207,8 @@ span.ripple {
   src: url("/Assets/Fonts/Mtavruli/fonts/bpg-glaho-web-caps-webfont.ttf");
 }
 .offcanvas {
-  background-color: #515b63;
-  width: 40% !important;
+  background-color: #191919;
+  width: 400px !important;
 }
 
 .offcanvas-header {
@@ -224,9 +252,9 @@ span.ripple {
   border-radius: 20px;
 }
 .modal .modal-dialog .modal-content {
-  background-color: #515b63;
+  background-color: #191919;
   border-radius: 20px;
-  border: 1px solid #373a3e;
+  border: 1px solid #1E1E1E;
 }
 .modal .modal-dialog .modal-content .modal-header,
 .modal .modal-dialog .modal-content .modal-footer {
@@ -238,10 +266,10 @@ span.ripple {
 }
 
 .list-group {
-  background-color: #515b63;
+  background-color: #191919;
 }
 .list-group .list-group-item {
-  background-color: #515b63;
+  background-color: #191919;
   border: none;
   border-radius: 10px;
   margin-top: 5px;
@@ -254,7 +282,7 @@ span.ripple {
   margin-right: 10px;
 }
 .list-group .list-group-item:hover {
-  background-color: rgba(55, 58, 62, 0.3960784314);
+  background-color: #2A2929;
 }
 .list-group .list-group-item.active {
   background-color: #00c896;
@@ -264,8 +292,119 @@ span.ripple {
   cursor: not-allowed;
 }
 
+.freshBot {
+  margin-top: 3rem;
+  background-color: #191919;
+  padding: 20px;
+  border-radius: 20px;
+}
+.freshBot .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #191919;
+  border: none;
+}
+.freshBot .header h2 {
+  font-weight: 900;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #ffffff;
+}
+.freshBot .header p {
+  font-family: "mtavruli", sans-serif;
+  color: #c2c2c2;
+  font-weight: 500;
+}
+.freshBot .shadow-container {
+  background: linear-gradient(180deg, #191919, rgba(39, 39, 39, 0.6352941176));
+  height: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  align-content: center;
+  color: #ffffff;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.freshBot .shadow-container p {
+  font-size: 11px;
+  margin: 0;
+  padding: 5px 0;
+}
+.freshBot .freshBot-form {
+  border: 1px solid #464646;
+  background-color: #272727;
+  padding: 10px 10px;
+  border-radius: 17px;
+  font-family: "nusxuri", sans-serif;
+  font-size: 14px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.freshBot .freshBot-form input {
+  border: none;
+  background-color: #272727;
+  width: 100%;
+  color: #ffffff;
+}
+.freshBot .freshBot-form input::-moz-placeholder {
+  color: #c2c2c2;
+}
+.freshBot .freshBot-form input::placeholder {
+  color: #c2c2c2;
+}
+.freshBot .freshBot-form input:focus {
+  outline: none;
+}
+.freshBot .freshBot-form .freshBot-submit {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 33px;
+  height: 33px;
+  margin: 0 0.2rem;
+  color: #000000;
+}
+.freshBot #information-container .query-title {
+  font-family: "mtavruli", sans-serif;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.freshBot #information-container .query-info {
+  font-family: "nusxuri", sans-serif;
+  color: #c2c2c2;
+}
+.freshBot #information-container h5 {
+  font-family: "nusxuri", sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .freshBot {
+    width: 95%;
+  }
+  .freshBot .shadow-container p {
+    display: none;
+  }
+  .freshBot .freshBot-form {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+}
+html {
+  height: 100vh;
+}
+
 .bg-body-tertiary,
 body {
-  background-color: #515b63 !important;
+  background-color: #191919 !important;
   font-family: "Comfortaa", sans-serif !important;
 }/*# sourceMappingURL=style.css.map */

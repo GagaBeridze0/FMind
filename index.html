@@ -39,14 +39,14 @@
           <!-- Menu -->
           <button type="menu" class="nav-btn btn" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fi fi-sr-bars-staggered"></i>
           </button>
           <a class="navbar-brand" href="#">
             <span>freshMind</span>
           </a>
         </div>
 
-        <form action="#" method="get" id="search-box">
+        <form action="#" method="get">
           <i class="fi fi-rr-search"></i>
           <input type="search" name="search" id="search-input" placeholder="რა გაინტერესებს?">
         </form>
@@ -108,17 +108,32 @@
 
 
     <!--================ Mobile search start ================-->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="search-offcanvas" aria-labelledby="search-offcanvasLabel">
-      <div class="offcanvas-header justify-content-end">
+    <div class="offcanvas offcanvas-start mobile-search" tabindex="-1" id="search-offcanvas" aria-labelledby="search-offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5><i class="fi fi-sr-bars-filter"></i></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
       <div class="offcanvas-body">
-        <form action="#" method="get" id="search-box">
+        <form action="#" class="mobile-search-form" method="get" id="search-box">
           <i class="fi fi-rr-search"></i>
           <input type="search" name="search" id="search-input" placeholder="რა გაინტერესებს?">
         </form>
+
+        <div class="mt-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-sr-search-alt"></i> გეოგრაფია
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-sr-search-alt"></i> ისტორია
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-sr-search-alt"></i> რა არის FreshMind?
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <!--================ Mobile search end ================-->
@@ -147,7 +162,7 @@
       </div>
       <div class="offcanvas-body">
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+          <a href="wikipedia.html" class="list-group-item list-group-item-action" aria-current="true">
             <i class="fa-brands fa-wikipedia-w"></i> ვიკიპედია
           </a>
           <a href="#" class="list-group-item list-group-item-action">
@@ -163,7 +178,7 @@
             <i class="fi fi-sr-resize"></i> ფოტოს დამუშავება
           </a>
           <a href="#" class="list-group-item list-group-item-action">
-            <i class="fi fi-sr-language"></i> FreshMind ტრანსლეიტი
+            <i class="fi fi-sr-language"></i> FreshMind translator
           </a>
         </div>
       </div>
@@ -175,7 +190,15 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
-            ...
+            <div class="mb-3">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="სახელი, გვარი">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ელ. ფოსტა">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="დაწერე შეტყობინება"></textarea>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary w-100">გაგზავნა</button>
