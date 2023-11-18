@@ -420,6 +420,10 @@ button:active, button:focus {
   font-size: 14px;
   text-decoration: none;
   line-height: 2;
+  font-weight: bold;
+}
+.freshBot #information-container a i {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {

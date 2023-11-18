@@ -115,10 +115,23 @@ async function displayWikipediaContentWithTypingEffect(data) {
     // Display content with typing effect for extract
     await typeText(data.extract, "query-info");
 
-    // Create a hyperlink for Wikipedia page URL
+    // Array of link variants
+    const linkVariants = [
+      '<i class="fi fi-sr-link-alt"></i> <span>მეტი</span>',
+      '<i class="fi fi-sr-link-alt"></i> <span>მეტი</span>',
+      '<i class="fi fi-sr-link-alt"></i> <span>შეიტყვეთ მეტი</span>',
+      '<i class="fi fi-sr-link-alt"></i> <span>გაიგე მეტი</span>',
+      '<i class="fi fi-sr-link-alt"></i> <span>ნახეთ სრულად</span>',
+      '<i class="fi fi-sr-link-alt"></i> <span>მეტის ნახვა</span>',
+    ];
+
+    // Randomly choose a link variant
+    const randomLinkVariant = linkVariants[Math.floor(Math.random() * linkVariants.length)];
+
+    // Create a hyperlink for Wikipedia page URL with the randomly chosen variant
     const linkContainer = document.createElement("div");
     const link = document.createElement("a");
-    link.innerHTML = '<i class="fi fi-sr-link-horizontal"></i> სრული ინფორმაცია';
+    link.innerHTML = randomLinkVariant;
     link.href = data.content_urls.desktop.page;
     link.target = "_blank"; // Open link in a new tab
     linkContainer.appendChild(link);
@@ -127,7 +140,8 @@ async function displayWikipediaContentWithTypingEffect(data) {
     freshBotheader.style.display = "none";
     // Display custom message when content is not found
     const notFoundMessage = document.createElement("h5");
-    await typeText(notFoundMessage.textContent = "ვერაფერი მოიძებნა ):")
+    notFoundMessage.textContent = "ვერაფერი მოიძებნა ):";
+    contentContainer.appendChild(notFoundMessage);
   }
 }
 
