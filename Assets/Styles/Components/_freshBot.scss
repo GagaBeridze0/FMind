@@ -27,7 +27,7 @@
   }
 
   .shadow-container {
-    background: linear-gradient(180deg, #191919, #272727a2);
+    // background: linear-gradient(180deg, #191919, #272727a2);
     height: 10rem;
     display: flex;
     justify-content: flex-end;
@@ -50,7 +50,7 @@
 
   & .freshBot-form {
     border: 1px solid $border-bold;
-    background-color: $component-light;
+    background-color: $body-color;
     padding: 10px 10px;
     border-radius: 17px;
     font-family: "nusxuri", sans-serif;
@@ -62,7 +62,7 @@
 
     & input {
       border: none;
-      background-color: $component-light;
+      background-color: $body-color;
       width: 100%;
       color: $primary-text;
 
@@ -76,7 +76,7 @@
     }
 
     & .freshBot-submit {
-      background-color: $primary-text;
+      background-color: $main-color;
       border-radius: 8px;
       width: 33px;
       height: 33px;

@@ -1,6 +1,5 @@
 .header {
   background-color: $body-color;
-  border-bottom: 1px solid $border-light;
 
   .logo_and_menu {
     display: flex;
@@ -26,13 +25,13 @@
       }
 
       &:active {
-        background-color: $hover-color !important;
+        background-color: $active-color !important;
         color: $primary-text !important;
       }
     }
 
     & form {
-      background-color: $component-light;
+      background-color: $component-normal;
       padding: 9px 15px;
       border-radius: 30px;
       display: flex;
@@ -47,7 +46,7 @@
       }
 
       & input {
-        background-color: $component-light;
+        background-color: $component-normal;
         border: none;
         padding: 0 10px;
         width: 280px;
@@ -79,7 +78,7 @@
         }
 
         &:active {
-          background-color: $hover-color !important;
+          background-color: $active-color !important;
           color: $primary-text !important;
         }
       }
@@ -103,7 +102,7 @@
 
     .mobile-search {
       .mobile-search-form {
-        background-color: $component-light;
+        background-color: $component-normal;
         padding: 7px 10px;
         border-radius: 10px;
         display: flex;
@@ -112,7 +111,7 @@
         color: $primary-text;
 
         input {
-          background-color: $component-light;
+          background-color: $component-normal;
           border: none;
           outline: none;
           padding: 0 10px;
@@ -128,7 +127,7 @@
 
       .list-group{
         .list-group-item{
-          background-color: $component-light;
+          background-color: $component-normal;
           font-family: "nusxuri", sans-serif !important;
         }
       }

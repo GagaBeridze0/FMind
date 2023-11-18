@@ -26,22 +26,53 @@
     --font-title-small: 18px;
     --font-title-medium: 21px;
     --font-title-large: 26px;
+
+
+
+
+
+
+
+
+
+    --white: #fff;
+    --black: #000;
+    --gray-50: #f7f7f8;
+    --gray-100: #ececf1;
+    --gray-200: #d9d9e3;
+    --gray-300: #c5c5d2;
+    --gray-400: #acacbe;
+    --gray-500: #8e8ea0;
+    --gray-600: #565869;
+    --gray-700: #40414f;
+    --gray-800: #343541;
+    --gray-900: #202123;
+    --gray-950: #050509;
+    --gizmo-gray-500: #999;
+    --gizmo-gray-600: #666;
+    --gizmo-gray-950: #0f0f0f;
 }
 
 
 // ============== Dark Mode ============== //
 // Background colors
-$body-color: #191919;
-$component-color: #1E1E1E;
-$component-light: #272727;
-$hover-color: #2A2929;
-// Ripple effect
-$ripple-color: #ffffff36;
+$body-color: #343541;
+$component-dark: #1e1e1e;
+$component-normal: #2e303b;
+$component-light: #202123;
+$component-very-light: #272727;
+$hover-color: #2e303b;
+$active-color: #2a2a34;
 // Text colors
-$secondary-text:  #c2c2c2;
+$secondary-text:  #7d7d89;
 $primary-text: #ffffff;
 // Border color
-$border-bold: #464646;
+$border-bold: #565869;
 $border-light: #24242436;
 // Main Color
 $main-color: #00c896;
+
+
+
+
+
