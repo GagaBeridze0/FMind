@@ -140,8 +140,7 @@ async function displayWikipediaContentWithTypingEffect(data) {
     freshBotheader.style.display = "none";
     // Display custom message when content is not found
     const notFoundMessage = document.createElement("h5");
-    notFoundMessage.textContent = "ვერაფერი მოიძებნა ):";
-    contentContainer.appendChild(notFoundMessage);
+    await typeText(notFoundMessage.textContent = "სამწუხაროდ თქვენი მოთხოვნა ვერ დამუშავდა. იქნებ მეტი კონტექსტი მოგვაწოდოთ ან სხვა შესატყვისი გამოიყენოთ?");
   }
 }
 

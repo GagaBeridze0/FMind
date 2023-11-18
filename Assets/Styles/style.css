@@ -408,6 +408,10 @@ button:active, button:focus {
   color: #ffffff;
   font-size: 13px;
 }
+.freshBot #information-container .undefined {
+  color: #ffffff;
+  font-family: "BPG Arial", sans-serif;
+}
 .freshBot #information-container a {
   color: #7d7d89;
   font-family: "BPG Glaho WEB Caps", sans-serif;
