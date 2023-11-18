@@ -1,5 +1,5 @@
 // Create the audio element outside of the function to make it global
-var audio = new Audio('../Assets/Media/Audio/mindia.mp3');
+var audio = new Audio('./Assets/Media/Audio/mindia.mp3');
 
 function handleInput() {
   var input = document.getElementById("search-input").value;
