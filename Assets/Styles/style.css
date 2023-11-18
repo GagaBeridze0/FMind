@@ -1,3 +1,5 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-glaho-web-caps/css/bpg-glaho-web-caps.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=IBM+Plex+Sans:wght@600;700&display=swap");
 :root {
   --bg-color-1: #373a3e;
@@ -68,7 +70,7 @@ button:active, button:focus {
 }
 
 .btn {
-  font-family: "nusxuri", sans-serif;
+  font-family: "BPG Arial", sans-serif;
 }
 
 .btn-primary {
@@ -123,7 +125,7 @@ button:active, button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "nusxuri", sans-serif;
+  font-family: "BPG Arial", sans-serif;
   font-size: 15px;
 }
 .header .navbar form i {
@@ -185,7 +187,7 @@ button:active, button:focus {
     padding: 0 10px;
     width: 100%;
     color: #ffffff;
-    font-family: "nusxuri", sans-serif;
+    font-family: "BPG Arial", sans-serif;
   }
   .header .mobile-search .mobile-search-form input ::-moz-placeholder {
     color: #ffffff;
@@ -195,25 +197,17 @@ button:active, button:focus {
   }
   .header .mobile-search .list-group .list-group-item {
     background-color: #2e303b;
-    font-family: "nusxuri", sans-serif !important;
+    font-family: "BPG Arial", sans-serif;
   }
 }
 
-@font-face {
-  font-family: "nusxuri";
-  src: url("/Assets/Fonts/Nusxuri/fonts/bpg-arial-webfont.ttf");
-}
-@font-face {
-  font-family: "mtavruli";
-  src: url("/Assets/Fonts/Mtavruli/fonts/bpg-glaho-web-caps-webfont.ttf");
-}
 .offcanvas {
   background-color: #343541;
   width: 400px !important;
 }
 
 .offcanvas-header {
-  font-family: "mtavruli", sans-serif;
+  font-family: "BPG Glaho WEB Caps", sans-serif;
 }
 .offcanvas-header h5 {
   font-size: 15px;
@@ -275,7 +269,7 @@ button:active, button:focus {
   border-radius: 10px;
   margin-top: 5px;
   color: #ffffff;
-  font-family: "mtavruli", sans-serif;
+  font-family: "BPG Glaho WEB Caps", sans-serif;
   font-size: 14px;
   transition: background-color 0.3s;
 }
@@ -316,7 +310,7 @@ button:active, button:focus {
   color: #ffffff;
 }
 .freshBot .header p {
-  font-family: "mtavruli", sans-serif;
+  font-family: "BPG Glaho WEB Caps", sans-serif;
   color: #7d7d89;
   font-weight: 500;
 }
@@ -344,7 +338,7 @@ button:active, button:focus {
   background-color: #343541;
   padding: 10px 10px;
   border-radius: 17px;
-  font-family: "nusxuri", sans-serif;
+  font-family: "BPG Arial", sans-serif;
   font-size: 14px;
   width: 60%;
   display: flex;
@@ -400,23 +394,23 @@ button:active, button:focus {
   padding-bottom: 7rem;
 }
 .freshBot #information-container .query-title {
-  font-family: "mtavruli", sans-serif;
+  font-family: "BPG Glaho WEB Caps", sans-serif;
   color: #ffffff;
   margin-top: 10px;
 }
 .freshBot #information-container .query-info {
-  font-family: "nusxuri", sans-serif;
+  font-family: "BPG Arial", sans-serif;
   color: #7d7d89;
   margin-bottom: 5px;
 }
 .freshBot #information-container h5 {
-  font-family: "nusxuri", sans-serif;
+  font-family: "BPG Arial", sans-serif;
   color: #ffffff;
   font-size: 13px;
 }
 .freshBot #information-container a {
   color: #7d7d89;
-  font-family: "mtavruli", sans-serif;
+  font-family: "BPG Glaho WEB Caps", sans-serif;
   font-size: 14px;
   text-decoration: none;
   line-height: 2;
@@ -446,7 +440,7 @@ button:active, button:focus {
 .wrapper .text-input {
   display: flex;
   border-bottom: 1px solid #565869;
-  font-family: "nusxuri", "Comfortaa", sans-serif;
+  font-family: "BPG Arial", sans-serif;
 }
 
 .text-input .to-text {

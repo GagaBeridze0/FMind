@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "nusxuri";
-  src: url("/Assets/Fonts/Nusxuri/fonts/bpg-arial-webfont.ttf");
-}
-
-@font-face {
-  font-family: "mtavruli";
-  src: url("/Assets/Fonts/Mtavruli/fonts/bpg-glaho-web-caps-webfont.ttf");
-}
-
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-glaho-web-caps/css/bpg-glaho-web-caps.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=IBM+Plex+Sans:wght@600;700&display=swap");

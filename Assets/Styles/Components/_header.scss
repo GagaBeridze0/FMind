@@ -37,7 +37,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: "nusxuri", sans-serif;
+      font-family: "BPG Arial", sans-serif;
       font-size: 15px;
 
       & i {
@@ -117,7 +117,7 @@
           padding: 0 10px;
           width: 100%;
           color: $primary-text;
-          font-family: "nusxuri", sans-serif;
+          font-family: "BPG Arial", sans-serif;
 
           ::placeholder {
             color: $primary-text;
@@ -128,7 +128,7 @@
       .list-group{
         .list-group-item{
           background-color: $component-normal;
-          font-family: "nusxuri", sans-serif !important;
+          font-family: "BPG Arial", sans-serif;
         }
       }
     }
