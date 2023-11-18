@@ -303,6 +303,11 @@ button:active, button:focus {
   padding: 10px;
   background-color: #343541;
   border: none;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .freshBot .header h2 {
   font-weight: 900;
@@ -332,6 +337,9 @@ button:active, button:focus {
   font-size: 11px;
   margin: 0;
   padding: 5px 0;
+}
+.freshBot .shadow-container a {
+  color: #00c896;
 }
 .freshBot .freshBot-form {
   border: 1px solid #565869;

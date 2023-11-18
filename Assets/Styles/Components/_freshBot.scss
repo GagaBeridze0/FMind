@@ -11,6 +11,11 @@
     padding: 10px;
     background-color: $body-color;
     border: none;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     h2 {
       font-weight: 900;
@@ -39,10 +44,14 @@
     flex-direction: column;
     flex-wrap: wrap;
 
-    p {
+    & p {
       font-size: 11px;
       margin: 0;
       padding: 5px 0;
+    }
+
+    & a{
+      color: $main-color;
     }
   }
 
