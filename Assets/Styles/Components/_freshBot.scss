@@ -131,8 +131,15 @@
     }
 
     .undefined{
-      color: $primary-text;
+      color: $secondary-text;
       font-family: "BPG Arial", sans-serif;
+      background-color: $component-normal;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: block;
     }
 
     a{

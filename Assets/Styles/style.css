@@ -409,8 +409,15 @@ button:active, button:focus {
   font-size: 13px;
 }
 .freshBot #information-container .undefined {
-  color: #ffffff;
+  color: #7d7d89;
   font-family: "BPG Arial", sans-serif;
+  background-color: #2e303b;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
 }
 .freshBot #information-container a {
   color: #7d7d89;
