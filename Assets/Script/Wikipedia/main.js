@@ -117,8 +117,8 @@ async function displayWikipediaContentWithTypingEffect(data) {
 
     // Array of link variants
     const linkVariants = [
-      '<i class="fi fi-sr-link-alt"></i> <span>მეტი</span>',
-      '<i class="fi fi-sr-link-alt"></i> <span>მეტი</span>',
+      '<i class="fi fi-sr-link-alt"></i> <span>სრული ინფორმაცია</span>',
+      '<i class="fi fi-sr-link-alt"></i> <span>ვრცლად</span>',
       '<i class="fi fi-sr-link-alt"></i> <span>შეიტყვეთ მეტი</span>',
       '<i class="fi fi-sr-link-alt"></i> <span>გაიგე მეტი</span>',
       '<i class="fi fi-sr-link-alt"></i> <span>ნახეთ სრულად</span>',
@@ -157,7 +157,7 @@ async function typeText(text, className) {
   // Iterate over each character and display with delay
   for (let i = 0; i < text.length; i++) {
     element.textContent += text.charAt(i);
-    await sleep(5); // Adjust the delay (in milliseconds) to control typing speed
+    await sleep(7); // Adjust the delay (in milliseconds) to control typing speed
   }
 }
 
