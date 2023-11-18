@@ -368,12 +368,18 @@ button:active, button:focus {
   outline: none;
 }
 .freshBot .freshBot-form .freshBot-submit {
-  background-color: #00c896;
+  background-color: #2e303b;
   border-radius: 8px;
   width: 33px;
   height: 33px;
   margin: 0 0.2rem;
-  color: #000000;
+  color: #7d7d89;
+}
+.freshBot .freshBot-form .freshBot-submit:last-child {
+  color: #ffffff;
+}
+.freshBot .freshBot-form .freshBot-submit:disabled {
+  opacity: 0.6;
 }
 .freshBot #information-container .query-title {
   font-family: "mtavruli", sans-serif;
