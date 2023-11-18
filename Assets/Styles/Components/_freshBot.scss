@@ -1,5 +1,4 @@
 .freshBot {
-  margin-top: 3rem;
   background-color: $body-color;
   padding: 20px;
   border-radius: 20px;
@@ -27,8 +26,7 @@
   }
 
   .shadow-container {
-    // background: linear-gradient(180deg, #191919, #272727a2);
-    height: 10rem;
+    background: $body-color;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -76,40 +74,69 @@
     }
 
     & .freshBot-submit {
-      background-color: $hover-color;
+      background-color: $main-color;
       border-radius: 8px;
       width: 33px;
       height: 33px;
       margin: 0 0.2rem;
-      color: $secondary-text;
+      color: $primary-text;
+      font-size: 14px;
+      transition: 0.3s;
 
-      &:last-child{
-        color: $primary-text;
+      &:last-child {
+        color: $third-text;
+        background-color: $component-normal;
+        font-size: 17px;
+
+        &.active {
+          background-color: $main-color;
+          color: $primary-text;
+        }
+
+        &:hover {
+          background-color: $main-color;
+          color: $primary-text;
+        }
       }
 
-      &:disabled{
-        opacity: 0.6;
+      &:disabled {
+        background-color: $hover-color;
+        color: $secondary-text;
+        opacity: 0.5;
       }
     }
   }
 
-  #information-container{
+  #information-container {
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 7rem;
+
     .query-title {
-        font-family: "mtavruli", sans-serif;
-        color: $primary-text;
-        margin-top: 10px;
-      }
-    
-      .query-info {
-        font-family: "nusxuri", sans-serif;
-        color: $secondary-text;
-      }
-    
-      h5{
-        font-family: "nusxuri", sans-serif;
-        color: $primary-text;
-        font-size: 13px;
-      }
+      font-family: "mtavruli", sans-serif;
+      color: $primary-text;
+      margin-top: 10px;
+    }
+
+    .query-info {
+      font-family: "nusxuri", sans-serif;
+      color: $secondary-text;
+      margin-bottom: 5px;
+    }
+
+    h5 {
+      font-family: "nusxuri", sans-serif;
+      color: $primary-text;
+      font-size: 13px;
+    }
+
+    a{
+      color: $secondary-text;
+      font-family: "mtavruli", sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+      line-height: 2;
+    }
   }
 }
 
@@ -117,10 +144,10 @@
   .freshBot {
     width: 95%;
 
-    .shadow-container{
-        p{
-            display: none;
-        }
+    .shadow-container {
+      p {
+        display: none;
+      }
     }
 
     & .freshBot-form {

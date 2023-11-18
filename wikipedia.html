@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./Assets/Vendor/Bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./Assets/Vendor/Flaticon/solid/css/uicons-solid-rounded.css">
     <link rel="stylesheet" href="./Assets/Vendor/Flaticon/Regular/css/uicons-regular-rounded.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -203,11 +204,11 @@
             <div class="freshBot-form">
                 <input type="text" class="freshBot-input" id="freshBot-input" placeholder="შეტყობინება freshBot-ს..." />
                 <div class="btn-group">
-                    <button onclick="fetchWikipediaContentWithTypingEffect()" class="freshBot-submit" disabled>
-                        <i class="fi fi-sr-paper-plane-top"></i>
+                    <button onclick="fetchWikipediaContentWithTypingEffect()" class="freshBot-submit" id="querysendBtn">
+                        <i class="fi fi-sr-upload"></i>
                     </button>
-                    <button onclick="startVoiceRecognition()" class="freshBot-submit">
-                        <i class="fa-solid fa-microphone"></i>
+                    <button onclick="startVoiceRecognition()" class="freshBot-submit" id="voice-btn">
+                        <i class='bx bxs-microphone'></i>
                       </button>
                 </div>
             </div>

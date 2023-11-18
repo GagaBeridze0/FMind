@@ -297,7 +297,6 @@ button:active, button:focus {
 }
 
 .freshBot {
-  margin-top: 3rem;
   background-color: #343541;
   padding: 20px;
   border-radius: 20px;
@@ -322,7 +321,7 @@ button:active, button:focus {
   font-weight: 500;
 }
 .freshBot .shadow-container {
-  height: 10rem;
+  background: #343541;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -368,18 +367,37 @@ button:active, button:focus {
   outline: none;
 }
 .freshBot .freshBot-form .freshBot-submit {
-  background-color: #2e303b;
+  background-color: #00c896;
   border-radius: 8px;
   width: 33px;
   height: 33px;
   margin: 0 0.2rem;
-  color: #7d7d89;
+  color: #ffffff;
+  font-size: 14px;
+  transition: 0.3s;
 }
 .freshBot .freshBot-form .freshBot-submit:last-child {
+  color: #70707f;
+  background-color: #2e303b;
+  font-size: 17px;
+}
+.freshBot .freshBot-form .freshBot-submit:last-child.active {
+  background-color: #00c896;
+  color: #ffffff;
+}
+.freshBot .freshBot-form .freshBot-submit:last-child:hover {
+  background-color: #00c896;
   color: #ffffff;
 }
 .freshBot .freshBot-form .freshBot-submit:disabled {
-  opacity: 0.6;
+  background-color: #2e303b;
+  color: #7d7d89;
+  opacity: 0.5;
+}
+.freshBot #information-container {
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 7rem;
 }
 .freshBot #information-container .query-title {
   font-family: "mtavruli", sans-serif;
@@ -389,11 +407,19 @@ button:active, button:focus {
 .freshBot #information-container .query-info {
   font-family: "nusxuri", sans-serif;
   color: #7d7d89;
+  margin-bottom: 5px;
 }
 .freshBot #information-container h5 {
   font-family: "nusxuri", sans-serif;
   color: #ffffff;
   font-size: 13px;
+}
+.freshBot #information-container a {
+  color: #7d7d89;
+  font-family: "mtavruli", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 2;
 }
 
 @media screen and (max-width: 768px) {
