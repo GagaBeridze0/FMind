@@ -52,6 +52,44 @@
           <button onclick="handleInput()">Go</button>
         </div>
 
+        <script>
+          // Create the audio element outside of the function to make it global
+          var audio = new Audio('./Assets/Media/Audio/mindia.mp3');
+
+          function handleInput() {
+            var input = document.getElementById("search-input").value;
+
+            if (input.startsWith("/ქურდულები")) {
+              // Play MP3 music
+              playMP3();
+            } else if (input.startsWith("/edr")) {
+              // Open image
+              openImage();
+            } else if (input.startsWith("/fr")) {
+              // Write MP3
+              writeMP3();
+            }
+          }
+
+          function playMP3() {
+            // Reset the audio to the beginning in case it's already playing
+            audio.currentTime = 0;
+
+            // Play the audio
+            audio.play();
+          }
+
+          function openImage() {
+            // Add your code to open an image here
+            console.log("Opening image");
+          }
+
+          function writeMP3() {
+            // Add your code to write MP3 here
+            console.log("Writing MP3");
+          }
+        </script>
+
         <div class="navbar-btns">
           <!-- Mobile search -->
           <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas"
@@ -109,7 +147,8 @@
 
 
     <!--================ Mobile search start ================-->
-    <div class="offcanvas offcanvas-start mobile-search" tabindex="-1" id="search-offcanvas" aria-labelledby="search-offcanvasLabel">
+    <div class="offcanvas offcanvas-start mobile-search" tabindex="-1" id="search-offcanvas"
+      aria-labelledby="search-offcanvasLabel">
       <div class="offcanvas-header">
         <h5><i class="fi fi-sr-bars-filter"></i></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -198,7 +237,8 @@
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ელ. ფოსტა">
             </div>
             <div class="mb-3">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="დაწერე შეტყობინება"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="დაწერე შეტყობინება"></textarea>
             </div>
           </div>
           <div class="modal-footer">
