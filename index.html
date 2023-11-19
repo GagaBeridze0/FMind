@@ -46,58 +46,16 @@
           </a>
         </div>
 
-        <div>
-          <i class="fi fi-rr-search"></i>
-          <input type="search" name="search" id="search-input" placeholder="რა გაინტერესებს?">
-          <button onclick="handleInput()">Go</button>
+        <div class="desktop-search-form">
+          <div class="search-box">
+            <input type="search" name="search" id="search-input" placeholder="რა გაინტერესებს?">
+            <button id="search-button"><i class="fi fi-rr-search"></i></button>
+          </div>
         </div>
 
-        <script>
-          var audio = new Audio('./Assets/Media/Audio/mindia.mp3');
-
-          function handleInput() {
-            var input = document.getElementById("search-input").value;
-
-            if (input.startsWith("/vor")) {
-              playMP3();
-            } else if (input.startsWith("/edr")) {
-              openImage();
-            } else if (input.startsWith("/fr")) {
-              writeMP3();
-            } else if (input.startsWith("/ქურდულები")) {
-              openModal();
-            }
-          }
-
-          function playMP3() {
-            audio.currentTime = 0;
-            audio.play();
-          }
-
-          function openImage() {
-            console.log("Opening image");
-          }
-
-          function writeMP3() {
-            console.log("Writing MP3");
-          }
-
-          function openModal() {
-            // Open the Bootstrap modal
-            $('#qurduli').modal('show');
-            playMP3();
-          }
-        </script>
 
 
-
-
-
-
-
-
-
-        <!-- Bootstrap Modal -->
+        <!-- /ქურდულები -->
         <div class="modal fade" id="qurduli" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
           aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -136,9 +94,6 @@
             aria-controls="settings-offcanvas">
             <i class="fi fi-sr-settings"></i>
           </button>
-          <!-- Contact -->
-          <button class="btn" data-bs-toggle="modal" data-bs-target="#contact-modal"><i
-              class="fi fi-sr-envelope"></i></button>
         </div>
       </div>
     </nav>
@@ -188,21 +143,30 @@
         </button>
       </div>
       <div class="offcanvas-body">
-        <form action="#" class="mobile-search-form" method="get" id="search-box">
-          <i class="fi fi-rr-search"></i>
-          <input type="search" name="search" id="search-input" placeholder="რა გაინტერესებს?">
-        </form>
+        <div class="mobile-search-form" method="get" id="mobile-search-box">
+          <input type="search" name="search" id="mobile-search-input" placeholder="რა გაინტერესებს?">
+          <button id="mobile-search-button"><i class="fi fi-rr-search"></i></button>
+        </div>
 
         <div class="mt-3">
           <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fi fi-sr-search-alt"></i> გეოგრაფია
+              <i class="fi fi-rr-search"></i> გეოგრაფია
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fi fi-sr-search-alt"></i> ისტორია
+              <i class="fi fi-rr-search"></i> ისტორია
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fi fi-sr-search-alt"></i> რა არის FreshMind?
+              <i class="fi fi-rr-search"></i> რა არის FreshMind?
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-rr-search"></i> freshBot
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-rr-search"></i> freshTranslator
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-rr-search"></i> სიახლეები
             </a>
           </div>
         </div>
@@ -256,33 +220,91 @@
       </div>
     </div>
     <!--================ apps end ================-->
-
-    <!--================ contact start ================-->
-    <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="mb-3">
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="სახელი, გვარი">
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ელ. ფოსტა">
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                placeholder="დაწერე შეტყობინება"></textarea>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary w-100">გაგზავნა</button>
-            <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">გაუქმება</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--================ contact end ================-->
   </header>
   <!--================ header end ================-->
+
+  <script>
+    // Audio object initialization
+    var audio = new Audio('./Assets/Media/Audio/mindia.mp3');
+
+    // Function to handle search logic
+    function handleInput() {
+      var input = document.getElementById("search-input").value;
+
+      if (input.startsWith("/vor")) {
+        playMP3();
+      } else if (input.startsWith("/edr")) {
+        openImage();
+      } else if (input.startsWith("/fr")) {
+        writeMP3();
+      } else if (input.startsWith("/ქურდულები")) {
+        openModal();
+      }
+    }
+
+    // Function to play MP3
+    function playMP3() {
+      audio.currentTime = 0;
+      audio.play();
+    }
+
+    // Function to open image
+    function openImage() {
+      console.log("Opening image");
+    }
+
+    // Function to write MP3
+    function writeMP3() {
+      console.log("Writing MP3");
+    }
+
+    // Function to open modal
+    function openModal() {
+      // Open the Bootstrap modal
+      $('#qurduli').modal('show');
+      playMP3();
+    }
+
+    // Event listener for desktop search button click
+    document.getElementById("search-button").addEventListener("click", handleInput);
+
+    // Event listener for desktop search Enter key press
+    document.getElementById("search-input").addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        handleInput();
+      }
+    });
+
+    // Event listener for mobile search button click
+    document.getElementById("mobile-search-button").addEventListener("click", function () {
+      var mobileInput = document.getElementById("mobile-search-input").value;
+      handleMobileInput(mobileInput);
+    });
+
+    // Event listener for mobile search Enter key press
+    document.getElementById("mobile-search-input").addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        var mobileInput = document.getElementById("mobile-search-input").value;
+        handleMobileInput(mobileInput);
+      }
+    });
+
+    // Function to handle mobile search logic
+    function handleMobileInput(mobileInput) {
+      if (mobileInput.startsWith("/vor")) {
+        playMP3();
+      } else if (mobileInput.startsWith("/edr")) {
+        openImage();
+      } else if (mobileInput.startsWith("/fr")) {
+        writeMP3();
+      } else if (mobileInput.startsWith("/ქურდულები")) {
+        openModal();
+      }
+    }
+
+  </script>
 
   <!-- Vendor -->
   <script src="./Assets/Vendor/Bootstrap/js/bootstrap.bundle.js"></script>

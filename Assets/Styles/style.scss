@@ -8,8 +8,21 @@
 @import './Components/list-group';
 @import './Components/freshBot';
 @import './Components/translate';
+@import './Components/secret';
 
-.bg-body-tertiary,
+*::-webkit-scrollbar{
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: $border-bold;
+    border-radius: 10px;
+}
+
 body{
     background-color: $body-color !important;
     font-family: 'Comfortaa', sans-serif !important;

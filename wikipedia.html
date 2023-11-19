@@ -32,160 +32,170 @@
 
 <body>
 
-    <!--================ header start ================-->
-    <header class="header" id="header">
-        <nav class="navbar py-3">
-            <div class="container align-items-center">
-                <div class="logo_and_menu">
-                    <!-- Menu -->
-                    <button type="menu" class="nav-btn btn" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas">
-                        <i class="fi fi-sr-bars-staggered"></i>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        <span>freshMind</span>
-                    </a>
-                </div>
-
-                <form action="#" method="get">
-                    <i class="fi fi-rr-search"></i>
-                    <input type="search" name="search" id="search-input" placeholder="რა გაინტერესებს?">
-                </form>
-
-                <div class="navbar-btns">
-                    <!-- Mobile search -->
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas"
-                        aria-controls="search-offcanvas">
-                        <i class="fi fi-rr-search"></i>
-                    </button>
-                    <!-- Apps -->
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#apps-offcanvas"
-                        aria-controls="apps-offcanvas"><i class="fi fi-sr-apps"></i></button>
-                    <!-- Settings -->
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#settings-offcanvas"
-                        aria-controls="settings-offcanvas">
-                        <i class="fi fi-sr-settings"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
-
-        <!--================ menu start ================-->
-        <div class="offcanvas offcanvas-start menu-offcanvas" tabindex="-1" id="menu-offcanvas"
-            aria-labelledby="menu-offcanvasLabel">
-            <div class="offcanvas-header">
-                <h5><i class="fi fi-sr-bars-staggered"></i></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="list-group">
-                    <a href="index.html" class="list-group-item list-group-item-action active" aria-current="true">
-                        <i class="fi fi-sr-home"></i> მთავარი
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fi fi-sr-book-alt"></i> საგნები
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fi fi-sr-devices"></i> პროექტები
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fi fi-sr-document"></i> სიახლეები
-                    </a>
-                    <a class="list-group-item list-group-item-action disabled" aria-disabled="true">
-                        <i class="fi fi-sr-comments"></i> დისკუსია
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fi fi-sr-envelope"></i> კონტაქტი
-                    </a>
-                </div>
-            </div>
+     <!--================ header start ================-->
+  <header class="header" id="header">
+    <nav class="navbar py-3">
+      <div class="container align-items-center">
+        <div class="logo_and_menu">
+          <!-- Menu -->
+          <button type="menu" class="nav-btn btn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#menu-offcanvas" aria-controls="menu-offcanvas">
+            <i class="fi fi-sr-bars-staggered"></i>
+          </button>
+          <a class="navbar-brand" href="#">
+            <span>freshMind</span>
+          </a>
         </div>
-        <!--================ menu end ================-->
 
-
-        <!--================ Mobile search start ================-->
-        <div class="offcanvas offcanvas-start mobile-search" tabindex="-1" id="search-offcanvas"
-            aria-labelledby="search-offcanvasLabel">
-            <div class="offcanvas-header">
-                <h5><i class="fi fi-sr-bars-filter"></i></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="offcanvas-body">
-                <form action="#" class="mobile-search-form" method="get" id="search-box">
-                    <i class="fi fi-rr-search"></i>
-                    <input type="search" name="search" id="search-input" placeholder="რა გაინტერესებს?">
-                </form>
-
-                <div class="mt-3">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <i class="fi fi-sr-search-alt"></i> გეოგრაფია
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <i class="fi fi-sr-search-alt"></i> ისტორია
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action">
-                            <i class="fi fi-sr-search-alt"></i> რა არის FreshMind?
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="desktop-search-form">
+          <div class="search-box">
+            <input type="search" name="search" id="search-input" placeholder="რა გაინტერესებს?">
+            <button id="search-button"><i class="fi fi-rr-search"></i></button>
+          </div>
         </div>
-        <!--================ Mobile search end ================-->
 
-        <!--================ Settings start ================-->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="settings-offcanvas"
-            aria-labelledby="settings-offcanvasLabel">
-            <div class="offcanvas-header justify-content-start">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="offcanvas-body">
-                ...
-            </div>
+        <div class="navbar-btns">
+          <!-- Mobile search -->
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas"
+            aria-controls="search-offcanvas">
+            <i class="fi fi-rr-search"></i>
+          </button>
+          <!-- Apps -->
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#apps-offcanvas"
+            aria-controls="apps-offcanvas"><i class="fi fi-sr-apps"></i></button>
+          <!-- Settings -->
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#settings-offcanvas"
+            aria-controls="settings-offcanvas">
+            <i class="fi fi-sr-settings"></i>
+          </button>
         </div>
-        <!--================ Settings end ================-->
+      </div>
+    </nav>
 
-        <!--================ apps start ================-->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="apps-offcanvas" aria-labelledby="apps-offcanvasLabel">
-            <div class="offcanvas-header">
-                <h5><i class="fi fi-sr-apps"></i></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="list-group">
-                    <a href="wikipedia.html" class="list-group-item list-group-item-action" aria-current="true">
-                        <i class="fa-brands fa-wikipedia-w"></i> ვიკიპედია
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fi fi-sr-desktop-wallpaper"></i> ფოტოს გენერატორი
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fi fi-sr-qrcode"></i> QR კოდის გენერატორი
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fi fi-sr-fill"></i> ფერის გენერატორი
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fi fi-sr-resize"></i> ფოტოს დამუშავება
-                    </a>
-                    <a href="translate.html" class="list-group-item list-group-item-action">
-                        <i class="fi fi-sr-language"></i> FreshMind translator
-                    </a>
-                </div>
-            </div>
+    <!--================ menu start ================-->
+    <div class="offcanvas offcanvas-start menu-offcanvas" tabindex="-1" id="menu-offcanvas"
+      aria-labelledby="menu-offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5><i class="fi fi-sr-bars-staggered"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-home"></i> მთავარი
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-book-alt"></i> საგნები
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-devices"></i> პროექტები
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-document"></i> სიახლეები
+          </a>
+          <a class="list-group-item list-group-item-action disabled" aria-disabled="true">
+            <i class="fi fi-sr-comments"></i> დისკუსია
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-envelope"></i> კონტაქტი
+          </a>
         </div>
-        <!--================ apps end ================-->
-    </header>
-    <!--================ header end ================-->
+      </div>
+    </div>
+    <!--================ menu end ================-->
 
+
+    <!--================ Mobile search start ================-->
+    <div class="offcanvas offcanvas-start mobile-search" tabindex="-1" id="search-offcanvas"
+      aria-labelledby="search-offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5><i class="fi fi-sr-bars-filter"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="mobile-search-form" method="get" id="mobile-search-box">
+          <input type="search" name="search" id="mobile-search-input" placeholder="რა გაინტერესებს?">
+          <button id="mobile-search-button"><i class="fi fi-rr-search"></i></button>
+        </div>
+
+        <div class="mt-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-rr-search"></i> გეოგრაფია
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-rr-search"></i> ისტორია
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-rr-search"></i> რა არის FreshMind?
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-rr-search"></i> freshBot
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-rr-search"></i> freshTranslator
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="fi fi-rr-search"></i> სიახლეები
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================ Mobile search end ================-->
+
+    <!--================ Settings start ================-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="settings-offcanvas"
+      aria-labelledby="settings-offcanvasLabel">
+      <div class="offcanvas-header justify-content-start">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        ...
+      </div>
+    </div>
+    <!--================ Settings end ================-->
+
+    <!--================ apps start ================-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="apps-offcanvas" aria-labelledby="apps-offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5><i class="fi fi-sr-apps"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="list-group">
+          <a href="wikipedia.html" class="list-group-item list-group-item-action" aria-current="true">
+            <i class="fa-brands fa-wikipedia-w"></i> freshBot
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-desktop-wallpaper"></i> ფოტოს გენერატორი
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-qrcode"></i> QR კოდის გენერატორი
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-fill"></i> ფერის გენერატორი
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-resize"></i> ფოტოს დამუშავება
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fi fi-sr-language"></i> freshTranslator
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--================ apps end ================-->
+  </header>
+  <!--================ header end ================-->
 
 
     <!--================ Wikipedia start ================-->

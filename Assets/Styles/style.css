@@ -118,9 +118,9 @@ button:active, button:focus {
   background-color: #2a2a34 !important;
   color: #ffffff !important;
 }
-.header .navbar form {
+.header .navbar .search-box {
   background-color: #2e303b;
-  padding: 9px 15px;
+  padding: 9px 10px;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -128,24 +128,34 @@ button:active, button:focus {
   font-family: "BPG Arial", sans-serif;
   font-size: 15px;
 }
-.header .navbar form i {
+.header .navbar .search-box i {
   color: #7d7d89;
   font-size: 18px;
 }
-.header .navbar form input {
+.header .navbar .search-box button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+}
+.header .navbar .search-box button i {
+  font-size: 13px;
+  color: #343541;
+}
+.header .navbar .search-box input {
   background-color: #2e303b;
   border: none;
   padding: 0 10px;
   width: 280px;
   color: #ffffff;
 }
-.header .navbar form input::-moz-placeholder {
+.header .navbar .search-box input::-moz-placeholder {
   color: #7d7d89;
 }
-.header .navbar form input::placeholder {
+.header .navbar .search-box input::placeholder {
   color: #7d7d89;
 }
-.header .navbar form input:focus {
+.header .navbar .search-box input:focus {
   outline: none;
   border: none;
 }
@@ -165,7 +175,7 @@ button:active, button:focus {
   color: #ffffff !important;
 }
 @media screen and (max-width: 768px) {
-  .header .navbar form {
+  .header .navbar .search-box {
     display: none;
   }
   .header .navbar .navbar-btns .btn:first-child {
@@ -174,11 +184,24 @@ button:active, button:focus {
   .header .mobile-search .mobile-search-form {
     background-color: #2e303b;
     padding: 7px 10px;
-    border-radius: 10px;
+    border-radius: 30px;
     display: flex;
     justify-content: start;
     align-items: center;
     color: #ffffff;
+  }
+  .header .mobile-search .mobile-search-form button {
+    background-color: #ffffff;
+    color: #343541;
+    border-radius: 50%;
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .mobile-search .mobile-search-form button i {
+    font-size: 13px;
   }
   .header .mobile-search .mobile-search-form input {
     background-color: #2e303b;
@@ -195,9 +218,21 @@ button:active, button:focus {
   .header .mobile-search .mobile-search-form input ::placeholder {
     color: #ffffff;
   }
+  .header .mobile-search .list-group {
+    background-color: #2e303b;
+    font-family: "BPG Arial", sans-serif;
+    border-radius: 15px;
+    padding: 5px;
+  }
   .header .mobile-search .list-group .list-group-item {
     background-color: #2e303b;
     font-family: "BPG Arial", sans-serif;
+    border-radius: 10px;
+    color: #7d7d89;
+    margin: 0;
+  }
+  .header .mobile-search .list-group .list-group-item:hover {
+    background-color: #343541 !important;
   }
 }
 
@@ -609,7 +644,29 @@ button:active, button:focus {
     font-size: 14px;
   }
 }
-.bg-body-tertiary,
+#qurduli .modal-content {
+  background-color: transparent !important;
+  border: none !important;
+}
+#qurduli video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #565869;
+  border-radius: 10px;
+}
+
 body {
   background-color: #343541 !important;
   font-family: "Comfortaa", sans-serif !important;
