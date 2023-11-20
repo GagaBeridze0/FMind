@@ -67,6 +67,18 @@
           </div>
         </div>
 
+        <!-- /ქურდულები -->
+        <div class="modal fade" id="sigma-face" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body d-flex justify-content-center align-items-center">
+                <img src="./Assets/Media/Image/Secret/sigma-face.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
 
 
 
@@ -233,7 +245,7 @@
 
       if (input.startsWith("/vor")) {
         playMP3();
-      } else if (input.startsWith("/edr")) {
+      } else if (input.startsWith("/სიგმა")) {
         openImage();
       } else if (input.startsWith("/fr")) {
         writeMP3();
@@ -250,7 +262,8 @@
 
     // Function to open image
     function openImage() {
-      console.log("Opening image");
+      // Open the Bootstrap modal
+      $('#sigma-face').modal('show');
     }
 
     // Function to write MP3
@@ -258,11 +271,8 @@
       console.log("Writing MP3");
     }
 
-    // Function to open modal
     function openModal() {
-      // Open the Bootstrap modal
       $('#qurduli').modal('show');
-      playMP3();
     }
 
     // Event listener for desktop search button click
@@ -295,7 +305,7 @@
     function handleMobileInput(mobileInput) {
       if (mobileInput.startsWith("/vor")) {
         playMP3();
-      } else if (mobileInput.startsWith("/edr")) {
+      } else if (mobileInput.startsWith("/სიგმა")) {
         openImage();
       } else if (mobileInput.startsWith("/fr")) {
         writeMP3();
@@ -303,7 +313,6 @@
         openModal();
       }
     }
-
   </script>
 
   <!-- Vendor -->

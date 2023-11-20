@@ -644,11 +644,19 @@ button:active, button:focus {
     font-size: 14px;
   }
 }
-#qurduli .modal-content {
+#qurduli .modal-content,
+#sigma-face .modal-content {
   background-color: transparent !important;
   border: none !important;
 }
-#qurduli video {
+#qurduli img,
+#sigma-face img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#qurduli video,
+#sigma-face video {
   width: 100%;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
