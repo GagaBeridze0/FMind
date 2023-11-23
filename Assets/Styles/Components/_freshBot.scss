@@ -1,37 +1,38 @@
 .freshBot {
-  background-color: $body-color;
+  background-color: $surface-primary;
   padding: 20px;
   border-radius: 20px;
 
-  & .header {
+  .header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 10px;
-    background-color: $body-color;
+    background-color: $surface-primary;
     border: none;
     position: absolute;
     top: 40%;
     width: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: -1;
 
     h2 {
       font-weight: 900;
       font-family: "IBM Plex Sans", sans-serif;
-      color: $primary-text;
+      color: $text-primary;
     }
 
     p {
       font-family: "BPG Glaho WEB Caps", sans-serif;
-      color: $secondary-text;
+      color: $text-secondary;
       font-weight: 500;
     }
   }
 
   .shadow-container {
-    background: $body-color;
+    background: $surface-primary;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -40,24 +41,24 @@
     left: 0;
     width: 100vw;
     align-content: center;
-    color: #ffffff;
     flex-direction: column;
     flex-wrap: wrap;
 
-    & p {
+    p {
       font-size: 11px;
       margin: 0;
       padding: 5px 0;
+      color: $text-secondary;
     }
 
-    & a{
+    a {
       color: $main-color;
     }
   }
 
-  & .freshBot-form {
-    border: 1px solid $border-bold;
-    background-color: $body-color;
+  .freshBot-form {
+    border: 1px solid $border-heavy;
+    background-color: $surface-primary;
     padding: 10px 10px;
     border-radius: 17px;
     font-family: "BPG Arial", sans-serif;
@@ -67,14 +68,14 @@
     align-items: center;
     justify-content: space-between;
 
-    & input {
+    input {
       border: none;
-      background-color: $body-color;
+      background-color: $surface-primary;
       width: 100%;
-      color: $primary-text;
+      color: $text-primary;
 
       &::placeholder {
-        color: $secondary-text;
+        color: $text-secondary;
       }
 
       &:focus {
@@ -82,35 +83,31 @@
       }
     }
 
-    & .freshBot-submit {
-      background-color: $main-color;
+    .freshBot-submit {
+      background-color: $text-primary;
       border-radius: 8px;
       width: 33px;
       height: 33px;
       margin: 0 0.2rem;
-      color: $primary-text;
+      color: $surface-primary;
       font-size: 14px;
       transition: 0.3s;
 
       &:last-child {
-        color: $third-text;
-        background-color: $component-normal;
+        color: $surface-primary;
+        background-color: $text-primary;
         font-size: 17px;
 
-        &.active {
-          background-color: $main-color;
-          color: $primary-text;
-        }
-
+        &.active,
         &:hover {
           background-color: $main-color;
-          color: $primary-text;
+          color: $text-primary;
         }
       }
 
       &:disabled {
-        background-color: $hover-color;
-        color: $secondary-text;
+        background-color: $surface-tertiary;
+        color: $text-primary;
         opacity: 0.5;
       }
     }
@@ -119,30 +116,34 @@
   #information-container {
     height: 100%;
     overflow-y: auto;
+    padding-top: 6rem;
     padding-bottom: 7rem;
+    width: 70%;
+    margin: auto;
 
     .query-title {
       font-family: "BPG Glaho WEB Caps", sans-serif;
-      color: $primary-text;
+      color: $text-primary;
       margin-top: 10px;
+      font-weight: bold;
     }
 
     .query-info {
       font-family: "BPG Arial", sans-serif;
-      color: $secondary-text;
+      color: $text-secondary;
       margin-bottom: 5px;
     }
 
     h5 {
       font-family: "BPG Arial", sans-serif;
-      color: $primary-text;
+      color: $text-primary;
       font-size: 13px;
     }
 
-    .undefined{
-      color: $secondary-text;
+    .undefined {
+      color: $text-primary;
       font-family: "BPG Arial", sans-serif;
-      background-color: $component-normal;
+      background-color: $surface-secondary;
       padding: 10px;
       border-radius: 10px;
       font-size: 15px;
@@ -151,23 +152,21 @@
       display: block;
     }
 
-    a{
-      color: $secondary-text;
+    a {
+      color: $text-secondary;
       font-family: "BPG Glaho WEB Caps", sans-serif;
       font-size: 14px;
       text-decoration: none;
       line-height: 2;
       font-weight: bold;
 
-       i{
+      i {
         font-weight: bold;
-       }
+      }
     }
   }
-}
 
-@media screen and (max-width: 768px) {
-  .freshBot {
+  @media screen and (max-width: 768px) {
     width: 95%;
 
     .shadow-container {
@@ -176,9 +175,13 @@
       }
     }
 
-    & .freshBot-form {
+    .freshBot-form {
       width: 95%;
       margin-bottom: 10px;
+    }
+
+    #information-container {
+      width: 100%;
     }
   }
 }

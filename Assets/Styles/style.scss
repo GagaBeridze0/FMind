@@ -9,6 +9,7 @@
 @import './Components/freshBot';
 @import './Components/translate';
 @import './Components/secret';
+@import './Components/settings';
 
 *::-webkit-scrollbar{
     width: 8px;
@@ -19,11 +20,11 @@
 }
 
 *::-webkit-scrollbar-thumb{
-    background-color: $border-bold;
+    background-color: $surface-tertiary;
     border-radius: 10px;
 }
 
 body{
-    background-color: $body-color !important;
+    background-color: $surface-primary !important;
     font-family: 'Comfortaa', sans-serif !important;
 }

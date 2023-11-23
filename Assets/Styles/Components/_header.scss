@@ -1,5 +1,11 @@
-.header {
-  background-color: $body-color;
+#header {
+  background: $surface-primary;
+  width: 100%;
+  position: fixed;
+
+  &.scrolled{
+    border-bottom: 1px solid $border-medium;
+  }
 
   .logo_and_menu {
     display: flex;
@@ -7,31 +13,31 @@
 
     & span {
       font-weight: bold;
-      color: $primary-text;
+      color: $text-primary;
     }
   }
 
   .navbar {
-    background-color: $body-color;
+    background: $surface-primary;
 
     .nav-btn {
-      color: $primary-text;
+      color: $text-primary;
       border-radius: 50%;
       margin-right: 20px;
 
       &:hover {
-        background-color: $hover-color;
-        color: $primary-text;
+        background: $hover-color;
+        color: $text-primary;
       }
 
       &:active {
-        background-color: $active-color !important;
-        color: $primary-text !important;
+        background: $active-color !important;
+        color: $text-primary !important;
       }
     }
 
     & .search-box {
-      background-color: $component-normal;
+      background: $surface-secondary;
       padding: 9px 10px;
       border-radius: 30px;
       display: flex;
@@ -40,32 +46,27 @@
       font-family: "BPG Arial", sans-serif;
       font-size: 15px;
 
-      & i {
-        color: $secondary-text;
-        font-size: 18px;
-      }
-
       & button {
         border-radius: 50%;
         width: 30px;
         height: 30px;
-        background-color: $primary-text;
+        background: $text-primary;
 
         & i {
           font-size: 13px;
-          color: $body-color;
+          color: $surface-primary;
         }
       }
 
       & input {
-        background-color: $component-normal;
+        background: $surface-secondary;
         border: none;
         padding: 0 10px;
         width: 280px;
-        color: $primary-text;
+        color: $text-primary;
 
         &::placeholder {
-          color: $secondary-text;
+          color: $text-secondary;
         }
 
         &:focus {
@@ -78,20 +79,20 @@
     .navbar-btns {
       .btn {
         border-radius: 50%;
-        color: $primary-text;
+        color: $text-primary;
 
         &:first-child {
           display: none;
         }
 
         &:hover {
-          background-color: $hover-color;
-          color: $primary-text;
+          background: $surface-secondary;
+          color: $text-primary;
         }
 
         &:active {
-          background-color: $active-color !important;
-          color: $primary-text !important;
+          background: $active-color !important;
+          color: $text-primary !important;
         }
       }
     }
@@ -114,16 +115,16 @@
 
     .mobile-search {
       .mobile-search-form {
-        background-color: $component-normal;
+        background: $component-normal;
         padding: 7px 10px;
         border-radius: 30px;
         display: flex;
         justify-content: start;
         align-items: center;
-        color: $primary-text;
+        color: $text-primary;
 
         & button {
-          background-color: $primary-text;
+          background: $text-primary;
           color: $body-color;
           border-radius: 50%;
           min-width: 30px;
@@ -138,35 +139,35 @@
         }
 
         input {
-          background-color: $component-normal;
+          background: $component-normal;
           border: none;
           outline: none;
           padding: 0 10px;
           width: 100%;
-          color: $primary-text;
+          color: $text-primary;
           font-family: "BPG Arial", sans-serif;
 
           ::placeholder {
-            color: $primary-text;
+            color: $text-primary;
           }
         }
       }
 
       .list-group {
-        background-color: $component-normal;
+        background: $component-normal;
         font-family: "BPG Arial", sans-serif;
         border-radius: 15px;
         padding: 5px;
 
         .list-group-item {
-          background-color: $component-normal;
+          background: $component-normal;
           font-family: "BPG Arial", sans-serif;
           border-radius: 10px;
-          color: $secondary-text;
+          color: $text-secondary;
           margin: 0;
 
-          &:hover{
-            background-color: $body-color !important;
+          &:hover {
+            background: $body-color !important;
           }
         }
       }

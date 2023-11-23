@@ -53,45 +53,6 @@
           </div>
         </div>
 
-
-
-        <!-- /ქურდულები -->
-        <div class="modal fade" id="qurduli" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body d-flex justify-content-center align-items-center">
-                <video src="./Assets/Media/Video/spilo.mp4" autoplay muted loop></video>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- /ქურდულები -->
-        <div class="modal fade" id="sigma-face" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body d-flex justify-content-center align-items-center">
-                <img src="./Assets/Media/Image/Secret/sigma-face.jpg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="navbar-btns">
           <!-- Mobile search -->
           <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#search-offcanvas"
@@ -189,13 +150,41 @@
     <!--================ Settings start ================-->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="settings-offcanvas"
       aria-labelledby="settings-offcanvasLabel">
-      <div class="offcanvas-header justify-content-start">
+      <div class="offcanvas-header">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
           <i class="fa-solid fa-xmark"></i>
         </button>
+        <h5><i class="fi fi-sr-settings"></i></h5>
       </div>
       <div class="offcanvas-body">
-        ...
+        <div class="settings-list">
+          <!-- Settings title -->
+          <div class="settings-item">
+            <p class="setting-title"><i class="fi fi-sr-moon-stars"></i> ღამის რეჟიმი
+              <span>დაარეგულირეთ freshMind-ის გარეგნობა, რათა შეამციროთ მბზინვარება და დაასვენოთ თვალები.</span>
+            </p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Second default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
+                disabled>
+              <label class="form-check-label" for="exampleRadios3">
+                Disabled radio
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!--================ Settings end ================-->
@@ -234,86 +223,6 @@
     <!--================ apps end ================-->
   </header>
   <!--================ header end ================-->
-
-  <script>
-    // Audio object initialization
-    var audio = new Audio('./Assets/Media/Audio/mindia.mp3');
-
-    // Function to handle search logic
-    function handleInput() {
-      var input = document.getElementById("search-input").value;
-
-      if (input.startsWith("/vor")) {
-        playMP3();
-      } else if (input.startsWith("/სიგმა")) {
-        openImage();
-      } else if (input.startsWith("/fr")) {
-        writeMP3();
-      } else if (input.startsWith("/ქურდულები")) {
-        openModal();
-      }
-    }
-
-    // Function to play MP3
-    function playMP3() {
-      audio.currentTime = 0;
-      audio.play();
-    }
-
-    // Function to open image
-    function openImage() {
-      // Open the Bootstrap modal
-      $('#sigma-face').modal('show');
-    }
-
-    // Function to write MP3
-    function writeMP3() {
-      console.log("Writing MP3");
-    }
-
-    function openModal() {
-      $('#qurduli').modal('show');
-    }
-
-    // Event listener for desktop search button click
-    document.getElementById("search-button").addEventListener("click", handleInput);
-
-    // Event listener for desktop search Enter key press
-    document.getElementById("search-input").addEventListener("keydown", function (event) {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        handleInput();
-      }
-    });
-
-    // Event listener for mobile search button click
-    document.getElementById("mobile-search-button").addEventListener("click", function () {
-      var mobileInput = document.getElementById("mobile-search-input").value;
-      handleMobileInput(mobileInput);
-    });
-
-    // Event listener for mobile search Enter key press
-    document.getElementById("mobile-search-input").addEventListener("keydown", function (event) {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        var mobileInput = document.getElementById("mobile-search-input").value;
-        handleMobileInput(mobileInput);
-      }
-    });
-
-    // Function to handle mobile search logic
-    function handleMobileInput(mobileInput) {
-      if (mobileInput.startsWith("/vor")) {
-        playMP3();
-      } else if (mobileInput.startsWith("/სიგმა")) {
-        openImage();
-      } else if (mobileInput.startsWith("/fr")) {
-        writeMP3();
-      } else if (mobileInput.startsWith("/ქურდულები")) {
-        openModal();
-      }
-    }
-  </script>
 
   <!-- Vendor -->
   <script src="./Assets/Vendor/Bootstrap/js/bootstrap.bundle.js"></script>

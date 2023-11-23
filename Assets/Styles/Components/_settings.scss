@@ -1,0 +1,24 @@
+.settings-list{
+    background-color: $component-normal;
+    border-radius: 20px;
+
+    .settings-item{
+        padding: 20px;
+    }
+
+    .setting-title{
+        font-family: "BPG Glaho WEB Caps", sans-serif;
+        color: $text-primary;
+        margin-bottom: 10px;
+
+        span{
+            display: block;
+            font-weight: lighter;
+            color: $text-secondary;
+            font-size: 13px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-family: "BPG Arial", sans-serif;
+        }
+    }
+}

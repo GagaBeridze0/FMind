@@ -54,7 +54,7 @@
 }
 
 
-// ============== Dark Mode ============== //
+
 // Background colors
 $body-color: #343541;
 $component-dark: #1e1e1e;
@@ -69,14 +69,21 @@ $primary-text: #ffffff;
 $third-text: #70707f;
 // Border color
 $border-bold: #565869;
-$border-light: #24242436;
+$border-light: #242424;
 // Main color
-$main-color: #00c896;
+$main-color: #10a1f8;
 
 // Gradient color
-$gradient-btn: linear-gradient(to right top, #00c896, #00d6a0, #00e3aa, #00f1b5, #00ffbf);
 
 
 
-
-
+$text-primary: #161616;
+$text-secondary: #666;
+$ry: #666;
+$surface-primary: #fff;
+$surface-secondary: #f2f2f2;
+$surface-tertiary: #e6e6e6;
+$border-light: #0000001a;
+$border-medium: #00000026;
+$border-heavy: #00000033;
+$border-xheavy: #00000040;

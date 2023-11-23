@@ -35,13 +35,13 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $primary-text;
+  color: $text-primary;
   opacity: 1;
   transition: .3s;
 
   &:hover,
   &:active{
-    color: $primary-text !important;
+    color: $text-primary !important;
     opacity: 1;
   }
 }
